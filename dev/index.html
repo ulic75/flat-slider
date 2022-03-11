@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+      font-family: roboto, arial, sans-serif;
+    }
+
+    flat-slider[vertical] {
+      margin-left: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../dist/flat-slider.js';
+
+    const verticalStyle = '--flat-slider-width: 42px; --flat-slider-height: 210px; --flat-slider-thumb-height: 0px; --flat-slider-thumb-width: 42px;';
+    const log = (event) => console.log(event.type, event.detail);
+    const formatter = (value) => `$${value}`;
+
+    render(
+      html`
+        <h1>Flat Slider Demos</h1>
+        <div style="margin-left: 20px; max-width: 210px;">
+          <h2>Default w/label</h2>
+          <flat-slider showLabel="active" @change=${log} @input=${log} .formatLabel=${formatter}></flat-slider>
+          <h2>Dual w/label</h2>
+          <flat-slider showLabel="active" low="66" high="73" thumbMargin="1" min="45" max="95" @change=${log}></flat-slider>
+          <h2>Dual w/label & Vertical</h2>
+          <flat-slider style="${verticalStyle}" showLabel="active" low="33" high="66" vertical></flat-slider>
+          <h2>Default w/label & Vertical</h2>
+          <flat-slider style="${verticalStyle}" showLabel="always" value="0" vertical></flat-slider>
+        </div>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+---
+layout: splash
+title: Demos
+---
+<h1>&nbsp;</h1>
+<!-- x-release-please-start-version -->
+<script src="https://unpkg.com/@ulic75/flat-slider@0.1.1?module" type="module"></script>
+<!-- x-release-please-end -->
+<style>
+  :root {
+    --flat-slider-track-background: rgba(221, 221, 221, 0.05);
+  }
+
+  .h-container {
+    max-width: 210px;
+    margin: 1em 0 0;
+  }
+
+  .highlight {
+    margin: 0.5em 0;
+  }
+</style>
+<h1>Demos</h1>
+
+<h2>Default</h2>
+<div class="h-container">
+  <flat-slider></flat-slider>
+</div>
+{% highlight html %}<flat-slider></flat-slider>{% endhighlight %}
+<h2>Dual</h2>
+<p>With Active label, define starting positions, thumb margin limit and custom min/max</p>
+<div class="h-container">
+  <flat-slider showLabel="active" low="66" high="73" thumbMargin="2" min="45" max="95"></flat-slider>
+</div>
+{% highlight html %}<flat-slider showLabel="active" low="66" high="73" thumbMargin="2" min="45" max="95"></flat-slider>
+{% endhighlight %}

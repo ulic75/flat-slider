@@ -1,0 +1,9 @@
+main:
+  # - title: 'Quick-Start Guide'
+  #   url: /quick-start-guide/
+  - title: 'Options'
+    url: /options
+  - title: 'Styling'
+    url: /styling
+  - title: 'Demos'
+    url: /demos
