@@ -1,0 +1,47 @@
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+name: test
+jobs:
+  test:
+    if: github.repository == 'ulic75/flat-slider'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Setup Node 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 'lts/*'
+          registry-url: https://registry.npmjs.org/
+
+      - name: Cache pnpm modules
+        id: cache-modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.cache/ms-playwright
+            ~/.pnpm-store
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml', '**/web-test-runner.config.mjs', 'rollup.config.test.js') }}
+          restore-keys: |
+            ${{ runner.os }}-
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.1
+        with:
+          version: latest
+          run_install: false
+
+      - name: Install Packages
+        if: steps.cache-modules.outputs.cache-hit != 'true'
+        run: pnpm install
+
+      - name: Test
+        run: pnpm test
