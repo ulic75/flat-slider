@@ -29,6 +29,12 @@ baseurl: '/flat-slider' # the subpath of your site, e.g. /blog
 markdown: kramdown
 repository: ulic75/flat-slider
 
+footer:
+  links:
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'https://github.com/ulic75/flat-slider'
+
 # Build settings
 # theme: jekyll-theme-slate
 remote_theme: 'mmistakes/minimal-mistakes@4.24.0'

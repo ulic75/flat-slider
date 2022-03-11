@@ -47,5 +47,3 @@ Styling the FlatSlider component can be accomplished through the setting of CSS 
 | `--flat-slider-thumb-label-font-size`                  | 12px                                           |                                                                                                                   |
 | `--flat-slider-thumb-label-gap`                        | 2px                                            | Distance between the thumb and the label                                                                          |
 | `--flat-slider-thumb-label-radius`                     | 4px                                            | Corner radius on the labels                                                                                       |
-| ===                                                    | ===                                            | ===                                                                                                               |
-| footer                                                 |
