@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.1](https://github.com/ulic75/flat-slider/compare/v0.0.0...v0.0.1) (2022-03-11)
+
+
+### Bug Fixes
+
+* trigger initial release ([3354795](https://github.com/ulic75/flat-slider/commit/335479575fc5f350d0aa9df2955793da434dc0f1))
+
 ### [0.1.1](https://github.com/ulic75/flat-slider/compare/v0.1.0...v0.1.1) (2022-03-11)
 
 
