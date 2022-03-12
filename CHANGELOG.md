@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/ulic75/flat-slider/compare/v0.0.2...v0.0.3) (2022-03-12)
+
+
+### Bug Fixes
+
+* **docs:** move text-nowrap to track-background ([6541470](https://github.com/ulic75/flat-slider/commit/654147042297915973931612945fa616382e4e4c))
+* **style:** allow any background styles instead of color only ([#7](https://github.com/ulic75/flat-slider/issues/7)) ([c5adb36](https://github.com/ulic75/flat-slider/commit/c5adb3663bea4014daca60d07e5b7373cfc15931))
+
 ### [0.0.2](https://github.com/ulic75/flat-slider/compare/v0.0.1...v0.0.2) (2022-03-11)
 
 
