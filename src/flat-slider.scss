@@ -93,7 +93,7 @@ $thumb-label-radius: 4px !default;
     .flat-slider-thumb-label,
     .flat-slider-track-background,
     .flat-slider-track-fill {
-      background-color: var(--flat-slider-disabled-color, $disabled-color);
+      background: var(--flat-slider-disabled-color, $disabled-color);
     }
   }
 }
@@ -106,22 +106,19 @@ $thumb-label-radius: 4px !default;
 }
 
 .flat-slider-track-background {
-  background-color: var(--flat-slider-track-background, $track-color);
+  background: var(--flat-slider-track-background, $track-color);
   position: absolute;
 }
 
 .flat-slider-track-fill {
-  background-color: var(--flat-slider-track-fill-color, $track-fill-color);
+  background: var(--flat-slider-track-fill-color, $track-fill-color);
   position: absolute;
   transform-origin: 0 0;
   &.flat-slider-track-fill-low {
-    background-color: var(
-      --flat-slider-track-fill-color-low,
-      $track-fill-color-low
-    );
+    background: var(--flat-slider-track-fill-color-low, $track-fill-color-low);
   }
   &.flat-slider-track-fill-high {
-    background-color: var(
+    background: var(
       --flat-slider-track-fill-color-high,
       $track-fill-color-high
     );
@@ -134,7 +131,7 @@ $thumb-label-radius: 4px !default;
 }
 
 .flat-slider-thumb {
-  background-color: var(--flat-slider-thumb-color, $thumb-color);
+  background: var(--flat-slider-thumb-color, $thumb-color);
   border-color: var(--flat-slider-thumb-border-color, $thumb-border-color);
   border-radius: var(--flat-slider-thumb-radius, $thumb-radius);
   border-style: solid;
@@ -146,14 +143,14 @@ $thumb-label-radius: 4px !default;
 }
 
 .flat-slider-thumb-low {
-  background-color: var(--flat-slider-thumb-color-low, $thumb-color-low);
+  background: var(--flat-slider-thumb-color-low, $thumb-color-low);
   border-color: var(
     --flat-slider-thumb-border-color-low,
     $thumb-border-color-low
   );
 
   .flat-slider-thumb-label {
-    background-color: var(
+    background: var(
       --flat-slider-thumb-label-color-low,
       $thumb-label-color-low
     );
@@ -161,14 +158,14 @@ $thumb-label-radius: 4px !default;
 }
 
 .flat-slider-thumb-high {
-  background-color: var(--flat-slider-thumb-color-high, $thumb-color-high);
+  background: var(--flat-slider-thumb-color-high, $thumb-color-high);
   border-color: var(
     --flat-slider-thumb-border-color-high,
     $thumb-border-color-high
   );
 
   .flat-slider-thumb-label {
-    background-color: var(
+    background: var(
       --flat-slider-thumb-label-color-high,
       $thumb-label-color-high
     );
@@ -177,7 +174,7 @@ $thumb-label-radius: 4px !default;
 
 .flat-slider-thumb-label {
   opacity: 0;
-  background-color: var(--flat-slider-thumb-label-color, $thumb-label-color);
+  background: var(--flat-slider-thumb-label-color, $thumb-label-color);
   display: flex;
   align-items: center;
   justify-content: center;
