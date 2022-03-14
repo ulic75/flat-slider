@@ -1,3 +1,4 @@
+import cors from '@koa/cors';
 // import { hmrPlugin, presets } from '@open-wc/dev-server-hmr';
 
 /** Use Hot Module replacement by adding --hmr to the start command */
@@ -11,6 +12,7 @@ export default /** @type {import('@web/dev-server').DevServerConfig} */ ({
   nodeResolve: {
     exportConditions: ['browser', 'development'],
   },
+  middleware: [cors()],
 
   /** Compile JS for older browsers. Requires @web/dev-server-esbuild plugin */
   // esbuildTarget: 'auto'
