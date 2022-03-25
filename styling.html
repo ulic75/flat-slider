@@ -1,0 +1,385 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Styling - &lt;flat-slider&gt;</title>
+<meta name="description" content="FlatSlider - A high configurable and stylable web-component range slider control.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="&lt;flat-slider&gt;">
+<meta property="og:title" content="Styling">
+<meta property="og:url" content="https://ulic75.github.io/flat-slider/styling.html">
+
+
+  <meta property="og:description" content="FlatSlider - A high configurable and stylable web-component range slider control.">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://ulic75.github.io/flat-slider/styling.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://ulic75.github.io/flat-slider/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/flat-slider/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--splash">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/flat-slider/">
+          &lt;flat-slider&gt;
+          <span class="site-subtitle">v0.0.4</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/flat-slider/options">Options</a>
+            </li><li class="masthead__menu-item">
+              <a href="/flat-slider/styling">Styling</a>
+            </li><li class="masthead__menu-item">
+              <a href="/flat-slider/demos">Demos</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Styling">
+    
+    
+    
+
+    <section class="page__content" itemprop="text">
+      <h1> </h1>
+
+<h1 id="styling">Styling</h1>
+
+<p>Styling the FlatSlider component can be accomplished through the setting of CSS Variables. Below is a list of the available variables and what parts of the slider they set.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>CSS Variable</th>
+      <th>Default</th>
+      <th>Use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span style="font-size: 1.25em;">Slider</span></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-height</code></td>
+      <td>42px</td>
+      <td>The height of the whole slider container. <em>Note</em>: This should be swapped with width when making a vertical slider</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-width</code></td>
+      <td>100%</td>
+      <td>The width of the whole slider container. <em>Note</em>: This should be swapped with height when making a vertical slider</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-disabled-color</code></td>
+      <td>rgb(189, 189, 189)</td>
+      <td>Used for all elements of the slider when it’s disabled</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><span style="font-size: 1.25em;">Track</span></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-track-radius</code></td>
+      <td>14px</td>
+      <td>Corner rounding on the slider track</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-track-background</code></td>
+      <td><span class="text-nowrap">rgba(51, 51, 51, 0.05)</span></td>
+      <td>Background color of the slider track</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-track-fill-color</code></td>
+      <td>rgb(255, 145, 1)</td>
+      <td>Color of the track fill when using a single thumb value slider</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-track-fill-color-low</code></td>
+      <td>#f58d42</td>
+      <td>Color of the track fill for the low thumb when using a dual thumb slider</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-track-fill-color-high</code></td>
+      <td>#3381ff</td>
+      <td>Color of the track fill for the high thumb when using a dual thumb slider</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-track-thickness</code></td>
+      <td>42px</td>
+      <td>The thickness of the actual track, height for horizontal sliders and width for vertical sliders</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><span style="font-size: 1.25em;">Thumb</span></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-height</code></td>
+      <td>42px</td>
+      <td>The height of the thumb (before borders)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-width</code></td>
+      <td>0px</td>
+      <td>The width of the thumb (before borders)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-color</code></td>
+      <td>white</td>
+      <td>Color of the thumb when using a single thumb slider</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-color-low</code></td>
+      <td>white</td>
+      <td>Color of the low thumb when using a dual thumb slider</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-color-high</code></td>
+      <td>white</td>
+      <td>Color of the high thumb when using a dual thumb slider</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-border-color</code></td>
+      <td>rgb(255, 145, 1)</td>
+      <td>Color of the border around the thumb using a single thumb slider</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-border-color-low</code></td>
+      <td>#f58d42</td>
+      <td>Color of the border around the low thumb using a dual thumb slider</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext text-nowrap highlighter-rouge">--flat-slider-thumb-border-color-high</code></td>
+      <td>#3381ff</td>
+      <td>Color of the border around the high thumb using a dual thumb slider</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-border-height</code></td>
+      <td>0px</td>
+      <td>The top and bottom border size of the thumb</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-border-width</code></td>
+      <td>0px</td>
+      <td>The right and left border size of the thumb</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-radius</code></td>
+      <td>0px</td>
+      <td>Corner rounding on the thumb</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><span style="font-size: 1.25em;">Thumb Label</span></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-label-height</code></td>
+      <td>20px</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-label-width</code></td>
+      <td>25px</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-label-color</code></td>
+      <td>rgb(255, 145, 1)</td>
+      <td>Color behind the thumb label text when using a single thumb slider</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-label-color-low</code></td>
+      <td>#f58d42</td>
+      <td>Color behind the low thumb label text when using a dual thumb slider</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-label-color-high</code></td>
+      <td>#3381ff</td>
+      <td>Color behind the high thumb label text when using a dual thumb slider</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-label-font-color</code></td>
+      <td>white</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-label-font-size</code></td>
+      <td>12px</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-label-gap</code></td>
+      <td>2px</td>
+      <td>Distance between the thumb and the label</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">--flat-slider-thumb-label-radius</code></td>
+      <td>4px</td>
+      <td>Corner radius on the labels</td>
+    </tr>
+  </tbody>
+</table>
+
+    </section>
+  </article>
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://github.com/ulic75/flat-slider" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 &lt;flat-slider&gt;. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/flat-slider/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
