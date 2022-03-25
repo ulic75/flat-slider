@@ -7,9 +7,6 @@
   "main": "./dist/flat-slider.cjs",
   "module": "./dist/flat-slider.js",
   "types": "./dist/flat-slider.d.ts",
-  "exports": {
-    "./flat-slider.js": "./dist/flat-slider.js"
-  },
   "files": [
     "dist/**/*"
   ],
