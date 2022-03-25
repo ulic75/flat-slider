@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/ulic75/flat-slider/compare/v0.0.3...v0.0.4) (2022-03-25)
+
+
+### Bug Fixes
+
+* npm package exports ([#12](https://github.com/ulic75/flat-slider/issues/12)) ([81c14f3](https://github.com/ulic75/flat-slider/commit/81c14f35e2a85c91f39ca5e5016171d43db6aec8))
+
 ### [0.0.3](https://github.com/ulic75/flat-slider/compare/v0.0.2...v0.0.3) (2022-03-12)
 
 
